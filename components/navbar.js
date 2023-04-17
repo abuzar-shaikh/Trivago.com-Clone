@@ -1,5 +1,5 @@
-const navbar=()=>{
-    return `
+const navbar = () => {
+  return `
        <nav>
           <div id="nav-left-option">
             <div class="nav-Favorites-icon">
@@ -23,7 +23,7 @@ const navbar=()=>{
             </div>
     
             <div class="nav-login-btn">
-              <button type="button" class="btn"><span id="login-span">Log in</span></button>
+              <button type="button" class="btn" id="login-btn"><span id="login-span">Log in</span></button>
             </div>
     
             <div class="dropdown">
@@ -77,7 +77,7 @@ const navbar=()=>{
         <div id="nav-Bar-2">
           <div id="nav-Deals-from">
             <div class="nav-Img-logo">
-              <a href="">
+              <a href="index.html">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Trivago.svg/2560px-Trivago.svg.png"
                   alt="trivago logo"
@@ -119,7 +119,7 @@ const navbar=()=>{
                   />
                 </svg>
               </div>
-              <div><input id="Mumbai-input" type="text" value="Mumbai" /></div>
+              <div><input id="Mumbai-input" type="text" placeholder="Mumbai"/></div>
               <div>
                 <button id="Mumbai-btn">
                   <svg
@@ -141,7 +141,7 @@ const navbar=()=>{
             <div class="nav-input-main-2">
               <div>
                 <div>Check in</div>
-                <div><input type="date" /></div>
+                <div><input type="date" id="check-in-date"/></div>
               </div>
               <div>
                 <svg
@@ -176,7 +176,7 @@ const navbar=()=>{
             <div class="nav-input-main-2">
               <div>
                 <div>Check out</div>
-                <div><input type="date" /></div>
+                <div><input type="date" id="check-out-date"/></div>
               </div>
               <div>
                 <svg
@@ -269,7 +269,7 @@ const navbar=()=>{
           </div>
         </div>
         </div>
-    `
-}
+    `;
+};
 
 export default navbar;
